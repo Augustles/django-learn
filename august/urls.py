@@ -17,5 +17,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^ask/', include('ask.urls')),
     url(r'^account/', include('account.urls')),
-    url(r'^online/', include('online.urls'))
+    url(r'^online/', include('online.urls')),
+    url(r'^disk/', include('disk.urls'))
 )
+

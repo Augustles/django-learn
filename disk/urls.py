@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-from django.conf.urls import url,patterns
+from django.conf.urls import patterns,url
 
-from account import views
-
+from disk import views
 urlpatterns = patterns('',
         url(r'^register/$',views.register),
-        url(r'^$',views.index),
         )
