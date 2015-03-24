@@ -1,0 +1,6 @@
+# 过滤.pyc settings.py
+*.pyc
+settings.py
+
+# 过滤文件夹
+upload/
