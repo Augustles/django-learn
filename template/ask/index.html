@@ -1,0 +1,4 @@
+<h1>index page</h1>
+{% for post in ask_list %}
+<li><a href='/ask/{{ post.id}}'>{{ post.content }}</a></li>
+{% endfor %}
