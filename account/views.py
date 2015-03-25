@@ -1,9 +1,8 @@
 #coding=utf-8
-from django.shortcuts import render
-from django import forms
-from django.shortcuts import render_to_response
-from django.http import HttpResponse,HttpResponseRedirect
-from django.template import RequestContext
+from django.shortcuts import render # import render
+from django import forms # import forms not form
+from django.shortcuts import render_to_response # import 比较与render区别
+from django.http import HttpResponse,HttpResponseRedirect # import
 from account.models import User
 
 #定义表单模型
@@ -15,10 +14,14 @@ class UserForm(forms.Form):
 
 # Create your views here.
 def index(request):
-    return HttpResponse('index page')
+    account_list = User.objects.all()
+    context = {'account_list':account_list}
+    return render(request,'account/index.html',context)
+def login(request):
+    return HttpResponse('account login page')
 def register(request):
-    if request.method == "POST":
-        uf = UserForm(request.POST,request.FILES)
+    if request.method == "POST": # 判定request是否为post
+        uf = UserForm(request.POST,request.FILES) # 是就把post数据和file路径都给变量uf
         if uf.is_valid():
             #获取表单信息
             username = uf.cleaned_data['username']

@@ -8,4 +8,5 @@ from account import views
 urlpatterns = patterns('',
         url(r'^register/$',views.register),
         url(r'^$',views.index),
+        url(r'^login',views.login),
         )
