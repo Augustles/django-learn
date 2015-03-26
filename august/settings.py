@@ -117,6 +117,8 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    #'django_admin_bootstrapped',
+    #'bootstrap_toolkit',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -126,7 +128,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    'django.contrib.admindocs',
     'blog',
     'ask',
     'account',

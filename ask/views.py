@@ -29,8 +29,8 @@ def detail(request,ask_id):
     #except Ask.DoesNotExist:
         #raise Http404
     ask = get_object_or_404(Ask,pk=ask_id)
-    context = Context({'ask':ask})
-    return render(request,'ask/detail.html',context)
+    ask_reply = ask.answer_set.all()
+    return render(request,'ask/detail.html',{'ask':ask_reply})
 def ask_add(request):
     if request.method == 'POST':
         af = AskForm(request.POST)

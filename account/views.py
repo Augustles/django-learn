@@ -8,7 +8,7 @@ from account.models import User
 #定义表单模型
 class UserForm(forms.Form):
     username = forms.CharField(label='用户名：',max_length=100)
-    passworld = forms.CharField(label='密码：',widget=forms.PasswordInput())
+    password = forms.CharField(label='密码：',widget=forms.PasswordInput())
     email = forms.EmailField(label='电子邮件：')
     headImg = forms.FileField(label='请上传图片',max_length='200')
 
@@ -25,13 +25,13 @@ def register(request):
         if uf.is_valid():
             #获取表单信息
             username = uf.cleaned_data['username']
-            passworld = uf.cleaned_data['passworld']
+            password = uf.cleaned_data['password']
             email = uf.cleaned_data['email']
             headImg = uf.cleaned_data['headImg']
             #将表单写入数据库
             user = User()
             user.username = username
-            user.passworld = passworld
+            user.password = password
             user.headImg = headImg
             user.email = email
             user.save()
