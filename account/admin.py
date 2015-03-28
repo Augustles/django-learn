@@ -6,7 +6,7 @@ from account.models import User
 
 class AccountAdmin(admin.ModelAdmin):
     fields = ['username','password','email']
-    list_display = ('username','email')
+    list_display = ('username','email','password')
     list_display_link = ('username','email')
     #list_editable = ('email',)
     search_fields = ('username','email')
