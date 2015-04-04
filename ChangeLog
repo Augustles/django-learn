@@ -1,0 +1,98 @@
+commit df9a50a36820bd441c9f192a4eb1434e85ea4374
+Author: augustles <1927064778@qq.com>
+Date:   Sat Apr 4 16:41:23 2015 +0800
+
+    修改django.ini
+
+commit abf90fb471062bc0dea27e6a19ecf25926680a92
+Author: augustles <1927064778@qq.com>
+Date:   Tue Mar 31 23:41:00 2015 +0800
+
+    	new file:   django.ini
+
+commit 5ecf07ea4f7a5dec0e8efccf4c0f1a68cb5cea81
+Merge: a2b2b11 cf10ec2
+Author: augustles <1927064778@qq.com>
+Date:   Sat Mar 28 08:45:12 2015 +0800
+
+    Merge branch 'master' of https://github.com/Augustles/django
+
+commit a2b2b11502cd0c1ddf24fc762c653c95d911d351
+Author: augustles <1927064778@qq.com>
+Date:   Sat Mar 28 08:42:33 2015 +0800
+
+    	modified:   account/admin.py
+
+commit cf10ec266365d1916cc42d5f6eeda5e49333ff4f
+Author: augustles <1927064778@qq.com>
+Date:   Fri Mar 27 10:59:06 2015 +0800
+
+    	修改:         account/views.py
+
+commit e5418e483343baa36dbfe8172b13211b981554b0
+Author: augustles <1927064778@qq.com>
+Date:   Thu Mar 26 16:05:29 2015 +0800
+
+    dev
+
+commit 7e45852e2b2002dd9f8881bd63e3703fbaf35514
+Merge: f1586c7 c862682
+Author: augustles <1927064778@qq.com>
+Date:   Thu Mar 26 09:02:31 2015 +0800
+
+    Merge branch 'master' of https://github.com/Augustles/django
+    
+    Conflicts:
+    	account/models.pyc
+    	account/urls.pyc
+    	account/views.pyc
+    
+    git
+
+commit f1586c72b5ff8c76528e74c7c78f0d2b690ff065
+Author: augustles <1927064778@qq.com>
+Date:   Thu Mar 26 08:59:21 2015 +0800
+
+    test
+
+commit c862682ddd46cd8e4c61c76eb7216437e68e15f3
+Author: Augustles <1927064778@qq.com>
+Date:   Wed Mar 25 22:37:35 2015 +0800
+
+    	modified:   account/urls.py
+
+commit 99f3808ecd8314eda57b4001027116cdedfa39e5
+Author: Augustles <1927064778@qq.com>
+Date:   Wed Mar 25 21:20:38 2015 +0800
+
+    添加注释
+
+commit 911856d251ae36b38b83ddec7f903149c705cd8b
+Author: TToo <TToo@TToos-Mac.local>
+Date:   Tue Mar 24 21:11:58 2015 +0800
+
+     改配
+
+commit 3ba34549a254cc1f9cd44837077870f37b1871cc
+Author: TToo <TToo@TToos-Mac.local>
+Date:   Tue Mar 24 20:59:15 2015 +0800
+
+    更改了一些配置
+
+commit 991f133b0bae17eb7fa32f91044377e7b94d22cc
+Author: Augustles <1927064778@qq.com>
+Date:   Tue Mar 24 17:54:13 2015 +0800
+
+    添加一个disk上传图片
+
+commit d543c50862af3e356b5518b80e7d585e218b32ac
+Author: Augustles <Augustles@users.noreply.github.com>
+Date:   Tue Mar 24 13:53:36 2015 +0800
+
+    Create README.md
+
+commit 6446dee05c0836a480e3701aec385c06b8958f9c
+Author: Augustles <1927064778@qq.com>
+Date:   Tue Mar 24 13:50:54 2015 +0800
+
+    django练习
