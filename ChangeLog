@@ -1,3 +1,21 @@
+commit 2a5faf9fa7be1d316dea964771c47c6e9b6c49bc
+Author: augustles <1927064778@qq.com>
+Date:   Mon Apr 6 11:58:25 2015 +0800
+
+    rm __init__.pyc
+
+commit 1e6bce7829ac84706c518b47c037ebf9066f0ec1
+Author: augustles <1927064778@qq.com>
+Date:   Mon Apr 6 11:56:27 2015 +0800
+
+    rm account *.pyc
+
+commit 9136d259982b62fbce53e10479ee8ebfa0ca987b
+Author: augustles <1927064778@qq.com>
+Date:   Sat Apr 4 19:42:23 2015 +0800
+
+    添加ChangLo
+
 commit df9a50a36820bd441c9f192a4eb1434e85ea4374
 Author: augustles <1927064778@qq.com>
 Date:   Sat Apr 4 16:41:23 2015 +0800
