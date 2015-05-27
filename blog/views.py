@@ -7,12 +7,12 @@ from blog.models import Blogpost
 from django.template import loader,Context
 def index(request):
     c = Blogpost.objects.all()
-    t = loader.get_template('index.html')
+    t = loader.get_template('blog/index.html')
     context = Context({'c':c})
     return HttpResponse(t.render(context))
 def detail(request,blog_id):
     c = Blogpost.objects.all()
-    t = loader.get_template('archive.html')
+    t = loader.get_template('blog/archive.html')
     context = Context({'c':c})
     return HttpResponse(t.render(context))
 
