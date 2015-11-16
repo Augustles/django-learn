@@ -1,0 +1,13 @@
+<h1>hello detail page</h1> {% if ask_reply %}
+<h3>总共有 {{ask_reply|length}} 个回答</h3> {% for content in ask_reply %}
+<li>{{content}}</li>
+{% endfor %} {% else %}
+<h3>sorry! no answers</h3> {% endif %}
+<h3><a href='javascript:redirect()' title='请添加你的回答'>请添加你的回答</a></h3>
+<script type="text/javascript">
+function redirect() {
+    var get_ask_id = window.location.pathname.split('/')[2].toString();
+    var url = '{% url 'answer_add' %}' + '#'+get_ask_id;
+    window.location = url;
+}
+</script>

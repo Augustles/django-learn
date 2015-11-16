@@ -1,0 +1,11 @@
+index page
+<h2><a href='{% url 'ask_add' %}' title='请添加你的问题'>请添加你的问题</a></h2>
+
+
+{% if ask_list %}
+{% for post in ask_list %}
+<h3><a href='/ask/{{ post.id}}'>{{ post.content }}</a></h3>
+{% endfor %}
+{% else %}
+<h3>sorry! no one asked</h3>
+{% endif %}
