@@ -24,7 +24,7 @@ DATABASES = {
         'NAME': 'august',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
-        'PASSWORD': 'Cxk517',
+        'PASSWORD': 'Cxk!51789',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
@@ -137,15 +137,15 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'blog',
-    'ask',
-    'account',
-    'online',
-    'disk',
+    # 'ask',
+    # 'account',
+    # 'online',
+    # 'disk',
     'news',
     # debug
-    'django_pdb',
+    # 'django_pdb',
     # 富文本
-    'tinymce',
+    # 'tinymce',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -180,45 +180,45 @@ LOGGING = {
 }
 
 #debug_toolbar settings
-if DEBUG:
-    INTERNAL_IPS = ('192.168.0.118',) # 在那台机子调试显示
-    MIDDLEWARE_CLASSES += (
-        'debug_toolbar.middleware.DebugToolbarMiddleware',
-    )
+# if DEBUG:
+    # INTERNAL_IPS = ('192.168.0.118',) # 在那台机子调试显示
+    # MIDDLEWARE_CLASSES += (
+        # 'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # )
 
-    INSTALLED_APPS += (
-        'debug_toolbar',
-    )
+    # INSTALLED_APPS += (
+        # 'debug_toolbar',
+    # )
 
-    DEBUG_TOOLBAR_PANELS = [
-        'debug_toolbar.panels.versions.VersionsPanel',
-        'debug_toolbar.panels.timer.TimerPanel',
-        'debug_toolbar.panels.settings.SettingsPanel',
-        'debug_toolbar.panels.headers.HeadersPanel',
-        'debug_toolbar.panels.request.RequestPanel',
-        'debug_toolbar.panels.sql.SQLPanel',
-        'debug_toolbar.panels.staticfiles.StaticFilesPanel',
-        'debug_toolbar.panels.templates.TemplatesPanel',
-        'debug_toolbar.panels.cache.CachePanel',
-        'debug_toolbar.panels.signals.SignalsPanel',
-        'debug_toolbar.panels.logging.LoggingPanel',
-        'debug_toolbar.panels.redirects.RedirectsPanel',
-    ]
+    # DEBUG_TOOLBAR_PANELS = [
+        # 'debug_toolbar.panels.versions.VersionsPanel',
+        # 'debug_toolbar.panels.timer.TimerPanel',
+        # 'debug_toolbar.panels.settings.SettingsPanel',
+        # 'debug_toolbar.panels.headers.HeadersPanel',
+        # 'debug_toolbar.panels.request.RequestPanel',
+        # 'debug_toolbar.panels.sql.SQLPanel',
+        # 'debug_toolbar.panels.staticfiles.StaticFilesPanel',
+        # 'debug_toolbar.panels.templates.TemplatesPanel',
+        # 'debug_toolbar.panels.cache.CachePanel',
+        # 'debug_toolbar.panels.signals.SignalsPanel',
+        # 'debug_toolbar.panels.logging.LoggingPanel',
+        # 'debug_toolbar.panels.redirects.RedirectsPanel',
+    # ]
 
-    DEBUG_TOOLBAR_CONFIG = {
-        'INTERCEPT_REDIRECTS': True,
-    }
+    # DEBUG_TOOLBAR_CONFIG = {
+        # 'INTERCEPT_REDIRECTS': True,
+    # }
 
-TINYMCE_DEFAULT_CONFIG = {
-    'file_browser_callback': 'mce_filebrowser',
-    'theme_advanced_buttons1' : 'save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect,fullscreen,code',
-    'theme_advanced_buttons2' : 'cut,copy,paste,pastetext,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,|,insertdate,inserttime,preview,|,forecolor,backcolor',
-    'theme_advanced_buttons3' : 'tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl',
-    'theme_advanced_toolbar_location' : 'top',
-    'theme_advanced_toolbar_align': 'left',
-    'paste_text_sticky': True,
-    'paste_text_sticky_default' : True,
-    'valid_styles' : 'font-weight,font-style,text-decoration',
-    'width': '700',
-    'height': '500',
-}
+# TINYMCE_DEFAULT_CONFIG = {
+    # 'file_browser_callback': 'mce_filebrowser',
+    # 'theme_advanced_buttons1' : 'save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect,fullscreen,code',
+    # 'theme_advanced_buttons2' : 'cut,copy,paste,pastetext,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,|,insertdate,inserttime,preview,|,forecolor,backcolor',
+    # 'theme_advanced_buttons3' : 'tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl',
+    # 'theme_advanced_toolbar_location' : 'top',
+    # 'theme_advanced_toolbar_align': 'left',
+    # 'paste_text_sticky': True,
+    # 'paste_text_sticky_default' : True,
+    # 'valid_styles' : 'font-weight,font-style,text-decoration',
+    # 'width': '700',
+    # 'height': '500',
+# }

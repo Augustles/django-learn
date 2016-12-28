@@ -1,20 +1,21 @@
 #coding=utf-8
 # Create your views here.
-
-from django.http import HttpResponse
+# 1.7 new JsonResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from blog.models import Blogpost
 from django.template import loader,Context
 def index(request):
     c = Blogpost.objects.all()
-    t = loader.get_template('blog/index.html')
-    context = Context({'c':c})
-    return HttpResponse(t.render(context))
+    out = []
+    for x in c:
+        tmp = (x.title, x.content, x.pub_time)
+        out.append(tmp)
+    return JsonResponse({'result': out})
 def detail(request,blog_id):
     c = Blogpost.objects.all()
-    t = loader.get_template('blog/archive.html')
     context = Context({'c':c})
-    return HttpResponse(t.render(context))
+    return HttpResponse(context)
 
 def comment(request,blog_id):
     return HttpResponse('comment %s' %blog_id)

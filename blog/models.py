@@ -8,4 +8,4 @@ class Blogpost(models.Model):
     content = models.TextField()
     def __unicode__(self):
         return self.content
-    pub_time = models.DateTimeField()
+    pub_time = models.DateTimeField(auto_now_add=True)
