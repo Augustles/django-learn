@@ -3,15 +3,15 @@
 # 1.7 new JsonResponse
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-from blog.models import Blogpost
+from blog.models import Blogpost, Post
 from django.template import loader,Context
 def index(request):
-    c = Blogpost.objects.all()
-    out = []
-    for x in c:
-        tmp = (x.title, x.content, x.pub_time)
-        out.append(tmp)
-    return JsonResponse({'result': out})
+    c = Post.objects.filter()
+    # out = []
+    # for x in c:
+        # tmp = (x.title, x.content, x.pub_time)
+        # out.append(tmp)
+    return JsonResponse({'result': c.to_json()})
 def detail(request,blog_id):
     c = Blogpost.objects.all()
     context = Context({'c':c})
